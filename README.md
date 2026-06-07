@@ -1,4 +1,4 @@
-# 🏆 copa do mundo 2026 — hub de noticias academico
+# 🏆 copa do mundo 2026 
 
 ## 📝 descricao do tema
 um portal moderno e responsivo focado na cobertura ficticia da copa do mundo de 2026 na america do norte. o site reune informacoes divididas entre noticias de bastidores, inovacoes tecnologicas de campo e uma central de atendimento para torcedores do mundo todo.

@@ -1,0 +1,156 @@
+<!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Copa do Mundo 2026
+Aluno 1: André Borges - RA: 250898
+Aluno 2: Luiz Amaral - RA: 251676
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Mundo 2026 | Galeria e Lançamentos</title>
+
+    <!-- bootstrape -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-success" href="index.html">🏆 Copa 2026</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main class="container py-5">
+        
+        <section class="text-center my-4">
+            <h1 class="fw-bold display-4 titulo-gradiente">Galeria de Novidades</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                Explore os lançamentos oficiais, as novas tecnologias de campo e os bastidores visuais da Copa do Mundo 2026.
+            </p>
+        </section>
+
+        
+        <div class="d-flex justify-content-center gap-2 mb-5">
+            <span class="badge bg-success p-2 px-3 fs-6 rounded-pill cursor-pointer">Todos</span>
+            <span class="badge bg-secondary p-2 px-3 fs-6 rounded-pill cursor-pointer">Estádios</span>
+            <span class="badge bg-secondary p-2 px-3 fs-6 rounded-pill cursor-pointer">Lançamentos</span>
+            <span class="badge bg-secondary p-2 px-3 fs-6 rounded-pill cursor-pointer">Tecnologia</span>
+        </div>
+
+        
+        <section class="row g-4">
+            
+            <article class="col-md-6 col-lg-4">
+                <figure class="card h-100 shadow-sm card-personalizado">
+                    <img src="./img/galeria-01.jpg" class="card-img-top" alt="Bola oficial da Copa do Mundo 2026 com detalhes coloridos">
+                    <figcaption class="card-body">
+                        <h2 class="card-title h5 fw-bold">Bola Oficial Al Rihla II</h2>
+                        <p class="card-text text-muted">Apresentando microchips internos que enviam dados de posicionamento em tempo real para a sala do VAR.</p>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <figure class="card h-100 shadow-sm card-personalizado">
+                    <img src="./img/galeria-02.jpg" class="card-img-top" alt="Fachada iluminada do Estádio Azteca no México à noite">
+                    <figcaption class="card-body">
+                        <h2 class="card-title h5 fw-bold">Palco Histórico: Estádio Azteca</h2>
+                        <p class="card-text text-muted">O gigante mexicano passou por reformas estruturais para receber o jogo de abertura com máxima tecnologia.</p>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <figure class="card h-100 shadow-sm card-personalizado">
+                    <img src="./img/galeria-03.jpg" class="card-img-top" alt="Visão aproximada do gramado híbrido recebendo irrigação automatizada">
+                    <figcaption class="card-body">
+                        <h2 class="card-title h5 fw-bold">Gramados Híbridos Inteligentes</h2>
+                        <p class="card-text text-muted">Todas as 16 arenas contam com controle computadorizado de temperatura e umidade sob a grama.</p>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <figure class="card h-100 shadow-sm card-personalizado">
+                    <img src="./img/galeria-04.jpg" class="card-img-top" alt="Manequins exibindo as jaquetas oficiais corta-vento da comissão técnica">
+                    <figcaption class="card-body">
+                        <h2 class="card-title h5 fw-bold">Moda Sustentável</h2>
+                        <p class="card-text text-muted">Lançamento da linha de agasalhos das seleções produzida inteiramente com plástico retirado dos oceanos.</p>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <figure class="card h-100 shadow-sm card-personalizado">
+                    <img src="./img/galeria-05.jpg" class="card-img-top" alt="Aplicativo mobile exibindo o QR Code do ingresso digital da Copa">
+                    <figcaption class="card-body">
+                        <h2 class="card-title h5 fw-bold">Ingressos Digitais</h2>
+                        <p class="card-text text-muted">Novo sistema criptografado para evitar fraudes, permitindo o acesso seguro via biometria facial nos portões.</p>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <figure class="card h-100 shadow-sm card-personalizado">
+                    <img src="./img/galeria-06.jpg" class="card-img-top" alt="Boneco do mascote oficial da copa posando em frente ao letreiro do evento">
+                    <figcaption class="card-body">
+                        <h2 class="card-title h5 fw-bold">O Mascote Interativo</h2>
+                        <p class="card-text text-muted">O carismático personagem deste ano ganhou uma versão em realidade aumentada para interagir com fãs nos estádios.</p>
+                    </figcaption>
+                </figure>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="rodape mt-5">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-start mb-3 mb-md-0 flex-rodape-info">
+                    <h5 class="fw-bold mb-1 text-white">🏆 Copa do Mundo 2026</h5>
+                    <p class="small text-white-50 m-0">Projeto desenvolvido para a AF - Linguagens de Programação.</p>
+                    <p class="small text-white-50 m-0">Curso: Análise e Desenvolvimento de Sistemas – ADS (Facens)</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="small text-white-50 m-0"><strong>Aluno 1:</strong> André Borges - RA: XXXXX</p>
+                    <p class="small text-white-50 m-0"><strong>Aluno 2:</strong> Nome Completo - RA: XXXXX</p>
+                    <p class="small text-white-50 mt-2 m-0">© 2026 - Trabalho Acadêmico Sem Fins Comerciais.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--js-->
+    <script src="./js/script.js"></script>
+</body>
+</html>

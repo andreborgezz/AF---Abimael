@@ -1,0 +1,135 @@
+/*
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Copa do Mundo 2026
+Aluno 1: André Borges - RA: 250898
+Aluno 2: Luiz Amaral - RA: 251676
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+*/
+
+:root {
+    --cor-primaria: #10b981;    
+    --cor-secundaria: #0f172a;  
+    --cor-destaque: #3b82f6;    
+    --cor-fundo: #f8fafc;       
+    --cor-branca: #ffffff;
+    --cor-texto-mutado: #64748b;
+    --gradiente-suave: linear-gradient(135deg, #10b981, #3b82f6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+    line-height: 1.6;
+    padding-top: 56px; 
+}
+
+/* segurando o tamanho das imagens do carrossel para ficar certinho */
+.carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+/* efeito visual de texto com cor em gradiente */
+.titulo-gradiente {
+    background: linear-gradient(90deg, #10b981, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* usando flexbox nos botoes da home para alinhar certinho */
+.flex-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* efeito visual de botao com fundo gradiente e transicao moleza */
+.btn-gradiente {
+    background: var(--gradiente-suave);
+    color: var(--cor-branca) !important;
+    border: none;
+    transition: opacity 0.3s ease;
+}
+
+.btn-gradiente:hover {
+    opacity: 0.9;
+}
+
+/* efeito de subir um pouco o card quando passa o mouse por cima */
+.card-personalizado {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none !important;
+}
+
+.card-personalizado:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.1) !important;
+}
+
+/* animacao simples que vai rodar pelo javascript */
+@keyframes sumirAparecer {
+    from {
+        opacity: 0.4;
+        transform: scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.card-destaque-js {
+    animation: sumirAparecer 0.4s ease forwards;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.3) !important;
+}
+
+/* usando flexbox para organizar as infos do rodape */
+.rodape {
+    background-color: #111827;
+    padding: 40px 0;
+    color: var(--cor-branca);
+}
+
+.flex-rodape-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* deixa o mouse com desenho de clique nos filtros */
+.cursor-pointer {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.cursor-pointer:hover {
+    background-color: var(--cor-primaria) !important;
+}
+
+/* estilo do botao flutuante de voltar pro topo */
+.btn-topo {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    display: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: var(--gradiente-suave);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
